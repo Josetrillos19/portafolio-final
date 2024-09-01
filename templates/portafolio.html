@@ -1,0 +1,90 @@
+{% extends "plantilla.html" %}
+
+{% block body %}
+<body>
+    <div class="portafolio">
+        <div class="portafolio-headings">
+            <h2> Mi portafolio</h2>
+            <div class="divider"></div>
+            <div class="container">
+                <div class="card">
+                    <div class="card_img">
+                    </div>
+                    <div class="card_title">
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="card_projects-link">
+                        <a href="https://github.com/Josetrillos19/actividad.git">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/joseluis.velasqueztrillos">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/3004647285">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/josetrillos2421/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <button class="project-details download-cv">
+                        <a href="{{url_for('html')}}">HTML</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card_imgc">
+                       
+                    </div>
+                    <div class="card_title">
+                        <h2>CSS</h2>
+                    </div>
+                    <div class="card_projects-link">
+                        <a href="https://github.com/Josetrillos19/actividad.git">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/joseluis.velasqueztrillos">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/3004647285">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/josetrillos2421/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <button class="project-details download-cv">
+                        <a href="{{url_for('css')}}">CSS</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card_imgp">
+                       
+                    </div>
+                    <div class="card_title">
+                        <h2>PYTHON</h2>
+                    </div>
+                    <div class="card_projects-link">
+                        <a href="https://github.com/Josetrillos19/actividad.git">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/joseluis.velasqueztrillos">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/3004647285">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/josetrillos2421/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <button class="project-details download-cv">
+                        <a href="{{url_for('python')}}">PYTHON</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+{% endblock %}

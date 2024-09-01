@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+ 
+  background-color: #191c32;
+  color: #fff;
+}
+
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+
+
+.brand{
+  margin-top: -7px;
+}
+.brand span {
+color: aqua;
+}
+.menu{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.menu li{
+  list-style: none;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding:  10px 20px;
+}
+.menu .active { 
+  color: aqua;
+}
+.menu a:hover {
+  background-color: rgba(243, 249, 249, 0.87);
+  color: #191c32;
+  transition: ease-in .4s;
+}
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+h1{
+  color:#fff
+  
+}
+p{
+  color:#fff
+}
+span{
+  color: aqua;
+}
+
+.download-cv{
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 69);
+}
+.download-cv:hover{
+  background-color: #fff;
+  box-shadow: none
+}
+.main img{
+  border: 7px solid aqua;
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 40px hwb(313 1% 73% / 0.557);
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about-info {
+  grid-column: 4/3;
+  padding: 4em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: aqua;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 10px;
+  margin-bottom: 3em;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+.portafolio-headings {
+  width: 100vw;
+  padding: 5em;
+}
+
+.portafolio-headings h2 {
+  color: #fff;
+}
+
+.portafolio .container {
+  width: 40vw;
+  height: 40vh;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 4em;
+}
+
+.card_img, .card_imgc, .card_imgp {
+  width: 100%;
+  height: auto; /* Ajustar automáticamente la altura según el ancho */
+  background-size: cover;
+  background-position: center; /* Asegurar que la imagen esté centrada */
+}
+
+.card_img {
+  background-image: url(/static/image/html5.jpg);
+}
+
+.card_imgc {
+  background-image: url(/static/image/css\ sin\ fondo.png);
+}
+
+.card_imgp {
+  background-image: url(/static/image/python-removebg-preview.png);
+}
+
+.card_title{
+  padding: 10px;
+}
+
+.card_projects-link{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card_projects-link a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.card_projects-link i{
+  font-size: 1.5em;
+}
+
+.card .project-details{
+  margin: 0 auto;
+  margin: 1em;
+  width: 70%;
+}
+.card .project-details a{
+  text-decoration: none;
+  color: #191c32;
+}
+
+.circulo{
+  border-radius: 50%;
+  border: 5px solid hsl(313, 94%, 14%); 
+  box-shadow: 5px 10px 40px hwb(313 1% 73% / 0.557);
+  display: flex;
+  justify-content: center;
+}
+.s2c1{
+  text-align: center;
+  color: rgb(254, 254, 255);
+}
+.s1c{
+  text-align: center;
+  color: rgb(254, 254, 255);
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+h1 {
+  font-family: 'Courier New', Courier, monospace;   
+
+}
+p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+  color: #fff
+}
+li{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.form-container {
+          background-color: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          width: 300px;
+      }
+.form-container h2 {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+.form h2{
+  color:#040404
+}
+.form-container label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+      }
+.form-container input, .form-container select, .form-container textarea {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+.form-container button {
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+.form-container button:hover {
+          background-color: #45a049;
+      }
+
+
+      @media (max-width: 1200px) {
+        .main {
+          grid-template-columns: 1fr;
+          height: auto;
+          text-align: center;
+        }
+      
+        .main img {
+          width: 80%;
+          height: auto;
+          margin: 0 auto;
+        }
+      
+        .about {
+          grid-template-columns: 1fr;
+        }
+      
+        .about-info {
+          grid-column: auto;
+          padding: 2em;
+        }
+      
+        .portafolio .container {
+          width: 80vw;
+          height: auto;
+        }
+      
+        .card {
+          width: 80%;
+          margin: 2em auto;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .menu {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .menu a {
+          padding: 15px 0;
+        }
+      
+        .main {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+      
+        .about-info {
+          padding: 1em;
+        }
+      
+        .portafolio .container {
+          width: 90vw;
+          height: auto;
+        }
+      
+        .card {
+          width: 90%;
+          margin: 2em auto;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .navbar {
+          padding: 1em;
+        }
+      
+        .brand {
+          font-size: 1.2em;
+        }
+      
+        .menu a {
+          padding: 10px;
+          font-size: 0.9em;
+        }
+      
+        .main img {
+          width: 70%;
+        }
+      
+        .about-info h2 {
+          font-size: 1.5em;
+        }
+      
+        .form-container {
+          width: 90%;
+          padding: 15px;
+        }
+      
+        .form-container input, .form-container select, .form-container textarea {
+          padding: 6px;
+        }
+      
+        .form-container button {
+          padding: 8px;
+        }
+      }

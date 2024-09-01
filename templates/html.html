@@ -1,0 +1,20 @@
+{% extends "plantilla.html" %}
+
+{% block body %}
+
+<body>
+    <div class="s2c1"><h1>HTML</h1>
+        <br><br>
+        <center> <img src="/static/image/html5.jpg" class="circulo" alt="" width="70px" height="70px"></center>
+            <br>
+            <br>   
+            <p>Soy un desarrollador web con sólidos conocimientos en HTML5, capaz de crear y mantener estructuras web semánticas, optimizadas para la accesibilidad y el rendimiento. He trabajado en proyectos donde he traducido maquetas de diseño en páginas web funcionales, asegurando la compatibilidad en múltiples dispositivos y navegadores. Mi experiencia incluye la integración de HTML con CSS y JavaScript, así como la implementación de prácticas de SEO técnico para mejorar la visibilidad y el rendimiento del sitio.</p>
+<br><br>
+            <button class="project-details download-cv">
+                <a href="{{url_for('portafolio')}}">volver</a>
+            </button>
+        
+        </div>
+</body>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+         background-color: #191c32 
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portafolio</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>J <span>V</span></h2>
+          </div>  
+          <ul class="menu">
+            <li ><a href="{{url_for('home')}}">Home</a></li>
+            <li><a class="active" href="{{url_for('sobre')}}">Sobre mi</a></li>
+            <li><a href="{{url_for('portafolio')}}">Portafolio</a></li>
+            <li><a class="active" href="{{url_for('contacto')}}">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+</div>
+        {% block body %}
+
+
+        {% endblock %}
+     
+      
+     </body>
+     </html>

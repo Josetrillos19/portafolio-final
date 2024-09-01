@@ -1,0 +1,21 @@
+{% extends "plantilla.html" %}
+
+{% block body %}
+<body>
+    <br><br><br>
+    <div class="result-container">
+        <h2>Gracias por Contactarnos</h2>
+        <br><br><br>
+        <p><strong>señor@</strong> {{ nombre }} <strong>,nos estaremos comunicando por medio de se correo electronico</strong>{{ email }}.</p>
+        <br><br><br>
+        <p><strong> </strong> {{ mensaje }}</p>
+    </div>
+    <center>
+    <button class="project-details download-cv">
+        <a href="{{url_for('contacto')}}">VOLVER</a>
+    </button>
+    </center>
+   
+</body>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "plantilla.html" %}
+
+{% block body %}
+
+<body>
+    <div class="s2c1"><h1>CSS</h1>
+        <br><br>
+        <center>
+        <img src="/static/image/css sin fondo.png" class="circulo" alt="" width="70px" height="70px">
+         </center>
+         <br><br>
+        <ul>
+            <li>
+                Desarrollo de estilos: Experiencia en la creación de estilos visualmente atractivos y funcionales para sitios web, asegurando una apariencia coherente y profesional.
+            </li>
+            <br>
+            <li>
+                Responsive Design: Capacidad para diseñar y ajustar interfaces que se adaptan a diferentes dispositivos y tamaños de pantalla utilizando técnicas de CSS modernas.
+            </li>
+            <br>
+            <li>
+                Preprocesadores CSS: Familiaridad con preprocesadores como SASS o LESS, optimizando la escritura y gestión del CSS de manera más eficiente.
+            </li>
+            <br>
+            <li>
+                Optimización de rendimiento: Implementación de prácticas de optimización de CSS para mejorar el rendimiento del sitio, como la minimización y el uso de técnicas avanzadas de codificación.
+            </li>
+        </ul>
+<br><br>
+        <button class="project-details download-cv">
+            <a href="{{url_for('portafolio')}}">VOLVER</a>
+        </button>
+  
+    </div>
+</body>
+
+{% endblock %}
